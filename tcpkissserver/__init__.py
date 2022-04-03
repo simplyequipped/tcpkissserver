@@ -1,2 +1,1 @@
-import tcpkissserver
-from tcpkissserver import TCPKISSServer as Server
+from tcpkissserver.server import TCPKISSServer as Server
