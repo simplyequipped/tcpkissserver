@@ -1,4 +1,4 @@
-# tcpkissserver
+# TCP KISS Server
 TCP [KISS](https://en.wikipedia.org/wiki/KISS_(TNC)) server for connecting software applications with [Reticulum](https://github.com/markqvist/Reticulum) using its built-in TCP client interface (with kiss framing enabled).
 
 ### Reticulum Configuration
