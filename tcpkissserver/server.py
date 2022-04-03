@@ -330,6 +330,3 @@ class TCPInterfaceHandler(socketserver.BaseRequestHandler):
     def handle(self):
         self.callback(handler=self)
         
-
-def test_tx_callback(data):
-    print(data)
