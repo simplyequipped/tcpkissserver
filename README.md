@@ -1,5 +1,5 @@
 # TCP KISS Server
-TCP [KISS](https://en.wikipedia.org/wiki/KISS_(TNC)) server for connecting software applications with [Reticulum](https://github.com/markqvist/Reticulum) using its built-in TCP client interface (with kiss framing enabled).
+TCP [KISS](https://en.wikipedia.org/wiki/KISS_(TNC)) server for connecting software applications to [Reticulum](https://github.com/markqvist/Reticulum) using its built-in TCP client interface (with kiss framing enabled).
 
 ### Reticulum Configuration
 Reticulum will need to be configured appropriately to interact with the TCP KISS server. Using the default server IP address and port number would look like this:
@@ -21,10 +21,10 @@ Be sure to configure Reticulum to match.
 
 ### Example
 ```
-import minimodem
+import fskmodem
 import tcpkissserver
 
-modem = minimodem.Modem()
+modem = fskmodem.Modem()
 server = tcpkissserver.Server(tx_callback=modem.send)
 modem.set_rx_callback(server.receive)
 ```
